@@ -1,1 +1,7 @@
-{}
+{
+  "fmt": {
+    "options": {
+      "proseWrap": "never"
+    }
+  }
+}

@@ -10,6 +10,10 @@ deno bench
 
 ## Results
 
+### [Has](./has.bench.ts)
+
+The performance impact is negligible between using `Map` or `Set`'s' `has()` method before `set()` or `add()` vs just using `set()` or `add()` without checking first.
+
 ### [Loops](./loops.bench.ts)
 
 ```
