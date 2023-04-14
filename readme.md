@@ -19,6 +19,16 @@ Fastest: typeof w/ new string
 8.58x faster than typeof w/ const string
 ```
 
+### [Array Clone](./array-clone.bench.ts)
+
+```
+Fastest: spread
+1x faster than slice
+1.02x faster than concat
+11.99x faster than for loop
+27.04x faster than map
+```
+
 ### [Has](./has.bench.ts)
 
 The performance impact is negligible between using `Map` or `Set`'s' `has()` method before `set()` or `add()` vs just using `set()` or `add()` without checking first.
@@ -26,8 +36,10 @@ The performance impact is negligible between using `Map` or `Set`'s' `has()` met
 ### [Loops](./loops.bench.ts)
 
 ```
-Fastest: C-style for var 1.01x faster than C-style for let 1.99x faster than for let of 1.99x faster than for var of 2x faster than for const of 17.3x faster than forEach
-```
-
-```
+Fastest: C-style for var
+1.01x faster than C-style for let 
+1.99x faster than for let of 
+1.99x faster than for var of 
+2x faster than for const of 
+17.3x faster than forEach
 ```
