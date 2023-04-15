@@ -43,3 +43,7 @@ Fastest: C-style for var
 2x faster than for const of 
 17.3x faster than forEach
 ```
+
+### Splitting on First Space
+
+Using `indexOf()` and `slice()` is always at least 1 order of magnitude faster than using `split()` and `join`, and is always faster than using `.match()` growing to by orders of magnitude faster as the string gets longer.
